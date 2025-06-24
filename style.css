@@ -1,0 +1,47 @@
+/*
+    Estilos CSS personalizados para a Calculadora Cebraspe.
+    Este arquivo é para estilos que não são diretamente do Tailwind CSS ou que você queira sobrescrever.
+*/
+
+/* Define a fonte Inter para todo o corpo do documento. */
+body {
+    font-family: "Inter", sans-serif;
+}
+
+/*
+    Centraliza o conteúdo principal e limita sua largura para melhor legibilidade
+    em telas grandes, garantindo responsividade.
+*/
+.container {
+    max-width: 1024px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o container na página */
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/*
+    Estilo para a área de resultado, que inicialmente estará oculta.
+    Será exibida pelo JavaScript quando o cálculo for realizado.
+*/
+#resultado {
+    display: none; /* Esconde o elemento por padrão */
+}
+
+/* Estilos para a caixa de mensagens (erros ou sucesso) */
+.message-box {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.message-box.error {
+    background-color: #fee2e2; /* Cor de fundo suave para erro */
+    color: #b91c1c; /* Cor do texto para erro (vermelho escuro) */
+    border: 1px solid #fca5a5; /* Borda para erro */
+}
+
+.message-box.success {
+    background-color: #d1fae5; /* Cor de fundo suave para sucesso */
+    color: #065f46; /* Cor do texto para sucesso (verde escuro) */
+    border: 1px solid #a7f3d0; /* Borda para sucesso */
+}
